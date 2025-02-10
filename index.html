@@ -7,9 +7,9 @@
   <style>
     .image-placeholder {
       display: flex;
+      flex-wrap: wrap;
       gap: 16px;
       justify-content: space-between;
-      flex-wrap: wrap;
     }
     .image-placeholder img {
       width: auto;
@@ -18,26 +18,37 @@
       object-fit: cover;
       border-radius: 8px;
     }
+    .image-row {
+      display: flex;
+      width: 100%;
+      gap: 16px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   </style>
 </head>
 <body>
 
   <div class="image-placeholder">
-    <!-- <img src="aimim.jpg" alt="Image 1"> -->
+    <!-- First row of images -->
     <img src="bhalkelogo-scaled.jpg" alt="Image 2">
     <img src="logo.png" alt="Image 3">
     <img src="shaheen.jpg" alt="Image 4">
     <img src="wisdom.jpg" alt="Image 5">
     <img src="image1.jpg" alt="Image 6">
-    <img src="image2.jpg" alt="Image 7">
-    <img src="image3.jpg" alt="Image 8">
-    <img src="image4.jpg" alt="Image 9">
-    <img src="image5.jpg" alt="Image 10">
-    <img src="image6.png" alt="Image 11">
-    <img src="Shashi.jpeg" alt="Shashi">
-    <img src="Starset Log.png" alt="Starset">
-    <img src="Starset_Log-removebg-preview.png" alt="Star">
-    <img src="Sushmita Image.jpg" alt="Sushmita">
+
+    <!-- Second row starting from Image 7 -->
+    <div class="image-row">
+      <img src="image2.jpg" alt="Image 7">
+      <img src="image3.jpg" alt="Image 8">
+      <img src="image4.jpg" alt="Image 9">
+      <img src="image5.jpg" alt="Image 10">
+      <img src="image6.png" alt="Image 11">
+      <img src="Shashi.jpeg" alt="Shashi">
+      <img src="Starset Log.png" alt="Starset">
+      <img src="Starset_Log-removebg-preview.png" alt="Star">
+      <img src="Sushmita Image.jpg" alt="Sushmita">
+    </div>
   </div>
 
 </body>
